@@ -1,0 +1,21 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Claude Code internal files
+.claude/
+
+# SUMO output logs (large, auto-generated)
+results/logs/tripinfo*.xml
+results/logs/queue*.xml
+
+# Intermediate model checkpoints (keep only dqn_final.pth)
+models/dqn_ep*.pth
+
+# OS
+.DS_Store
+Thumbs.db

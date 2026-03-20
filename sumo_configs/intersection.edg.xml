@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<edges xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/edges_file.xsd">
+
+    <!--
+        4 lanes per approach (4 each direction), spread from road centerline.
+        speed = 13.89 m/s (50 km/h)
+        Lane layout (right → left in direction of travel):
+            Lane 0 : right turn
+            Lane 1 : straight
+            Lane 2 : straight
+            Lane 3 : left turn
+    -->
+
+    <!-- North arm -->
+    <edge id="N2C" from="N" to="C" numLanes="4" speed="13.89" spreadType="center" priority="1"/>
+    <edge id="C2N" from="C" to="N" numLanes="4" speed="13.89" spreadType="center" priority="1"/>
+
+    <!-- South arm -->
+    <edge id="S2C" from="S" to="C" numLanes="4" speed="13.89" spreadType="center" priority="1"/>
+    <edge id="C2S" from="C" to="S" numLanes="4" speed="13.89" spreadType="center" priority="1"/>
+
+    <!-- East arm -->
+    <edge id="E2C" from="E" to="C" numLanes="4" speed="13.89" spreadType="center" priority="1"/>
+    <edge id="C2E" from="C" to="E" numLanes="4" speed="13.89" spreadType="center" priority="1"/>
+
+    <!-- West arm -->
+    <edge id="W2C" from="W" to="C" numLanes="4" speed="13.89" spreadType="center" priority="1"/>
+    <edge id="C2W" from="C" to="W" numLanes="4" speed="13.89" spreadType="center" priority="1"/>
+
+</edges>

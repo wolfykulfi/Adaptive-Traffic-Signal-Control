@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/connections_file.xsd">
+
+    <!--
+        4 lanes per approach:
+            Lane 0 : right turn
+            Lane 1 : straight
+            Lane 2 : straight
+            Lane 3 : left turn
+    -->
+
+    <!-- ── From NORTH (traveling south): right→West, straight→South, left→East -->
+    <connection from="N2C" to="C2W" fromLane="0" toLane="0"/>
+    <connection from="N2C" to="C2S" fromLane="1" toLane="1"/>
+    <connection from="N2C" to="C2S" fromLane="2" toLane="2"/>
+    <connection from="N2C" to="C2E" fromLane="3" toLane="3"/>
+
+    <!-- ── From SOUTH (traveling north): right→East, straight→North, left→West -->
+    <connection from="S2C" to="C2E" fromLane="0" toLane="0"/>
+    <connection from="S2C" to="C2N" fromLane="1" toLane="1"/>
+    <connection from="S2C" to="C2N" fromLane="2" toLane="2"/>
+    <connection from="S2C" to="C2W" fromLane="3" toLane="3"/>
+
+    <!-- ── From EAST (traveling west): right→North, straight→West, left→South -->
+    <connection from="E2C" to="C2N" fromLane="0" toLane="0"/>
+    <connection from="E2C" to="C2W" fromLane="1" toLane="1"/>
+    <connection from="E2C" to="C2W" fromLane="2" toLane="2"/>
+    <connection from="E2C" to="C2S" fromLane="3" toLane="3"/>
+
+    <!-- ── From WEST (traveling east): right→South, straight→East, left→North -->
+    <connection from="W2C" to="C2S" fromLane="0" toLane="0"/>
+    <connection from="W2C" to="C2E" fromLane="1" toLane="1"/>
+    <connection from="W2C" to="C2E" fromLane="2" toLane="2"/>
+    <connection from="W2C" to="C2N" fromLane="3" toLane="3"/>
+
+</connections>
