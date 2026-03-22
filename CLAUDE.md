@@ -97,11 +97,14 @@ ATSC/
 |-----------|-------|-------|
 | `lr` | 5e-4 | Lower than default to prevent Q-value divergence |
 | `gamma` | 0.99 | Long-term reward focus |
+| `epsilon_start` / `epsilon_end` | 1.0 → 0.05 | |
 | `epsilon_decay` | 0.998 | Slow decay — more exploration |
 | `buffer_capacity` | 50,000 | Large buffer for stable sampling |
 | `batch_size` | 128 | |
 | `target_update` | 50 | Infrequent target sync = more stable |
 | `n_episodes` | 500 | |
+| `max_steps` | 3600 | 1 simulated hour per episode |
+| `save_every` | 50 | Intermediate checkpoints saved as `models/dqn_ep{N}.pth` |
 
 ---
 
